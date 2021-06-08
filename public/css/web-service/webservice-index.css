@@ -1,0 +1,37 @@
+h1{
+    margin-left: 180px;
+}
+#adicionar {
+    margin-right: 500px;
+    margin-left: 860px;
+    margin-top: 30px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+table.tabela {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+th {
+    padding: 10px;
+}
+.bot, .idTabela {
+    height: 50px;
+    width: 150px;
+}
+.botEditar {
+    margin-top: 10px;
+}
+.botDeletar {
+    margin-top: 10px;
+}
+.modal-header, h4 {
+    background-color: black;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+}

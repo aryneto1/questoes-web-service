@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+#selecao {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+#selecao:invalid {
+    color: gray;
+}
+.form-group {
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+#botao {
+    margin-right: 500px;
+    margin-left: 850px;
+    margin-top: 30px;
+}
