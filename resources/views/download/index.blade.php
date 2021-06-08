@@ -22,7 +22,6 @@
         <div class="btn btn-outline-primary" id="botao">
             <i class="fas fa-download"> Download</i>
         </div>
-        <button type="submit">awddaw</button>
     </form>
     <script>
         $(document).ready( function(){
