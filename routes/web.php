@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [\App\Http\Controllers\DownloadController::class, 'index']);
+
 Route::get('/questoes', [\App\Http\Controllers\DownloadController::class, 'index'])
     ->name('questoes');
 
