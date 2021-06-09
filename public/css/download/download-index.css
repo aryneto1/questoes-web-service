@@ -1,12 +1,15 @@
 h1 {
     text-align: center;
 }
-#selecao {
+#selecao, #textoWebService {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     display: block;
+}
+#selecao {
+    margin-top: 5px
 }
 #selecao:invalid {
     color: gray;

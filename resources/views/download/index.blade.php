@@ -8,15 +8,18 @@
 
 @section('conteudo')
     <form method="post" action="/questoes/download">
-        <select name="web-service" id="selecao" required class="form-group">
-            <option value="" selected disabled hidden>Selecionar Web Service</option>
-            @foreach($webservices as $webservice)
-                <option value="{{ $webservice->id }}">{{ $webservice->descricao }}</option>
-            @endforeach
-        </select>
         <div class="form-group">
-            <label for="disciplina"></label>
-            <input type="text" name="disciplina" id="disciplina" class="form-control" placeholder="Códigos da disciplinas (Use 1 espaço para separá-los)" required >
+            <label for="web-service" id="textoWebService">Escolha o Web Service</label>
+            <select name="web-service" id="selecao" required class="form-group">
+                <option value="" selected disabled hidden>Selecionar Web Service</option>
+                @foreach($webservices as $webservice)
+                    <option value="{{ $webservice->id }}">{{ $webservice->descricao }}</option>
+                @endforeach
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="disciplina">Informe os códigos das disciplinas (use 1 espaço para separá-los)</label>
+            <input type="text" name="disciplina" id="disciplina" class="form-control" placeholder="Códigos da disciplinas" required>
         </div>
         @csrf
         <div class="btn btn-outline-primary" id="botao">
