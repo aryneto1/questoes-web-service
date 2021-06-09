@@ -177,6 +177,9 @@ class DownloadService
             //processo para salvar o excel na pasta e fazer download dele no browser
             $objWriter = new Csv($spreadsheet);
 
+            if(!is_dir(__DIR__ . '/../../../public/questao')) {
+                mkdir(__DIR__ . '/../../../public/questao');
+            }
             $arqQuestao = __DIR__ . "/../../../public/questao/disciplina-" . $itemDisciplina . ".csv";
             $objWriter->save($arqQuestao);
 
