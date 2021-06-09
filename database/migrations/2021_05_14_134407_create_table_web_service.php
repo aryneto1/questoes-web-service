@@ -16,7 +16,7 @@ class CreateTableWebService extends Migration
         Schema::create('web_service', function (Blueprint $table) {
             $table->id();
             $table->string('descricao', 40);
-            $table->string('api_server', 40);
+            $table->string('api_server', 255);
             $table->string('api_http_user', 40);
             $table->string('api_http_pass', 40);
             $table->string('chave_acesso', 40);
