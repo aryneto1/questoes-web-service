@@ -4,7 +4,13 @@ Esse projeto foi desenvolvido para auxiliar na empresa que trabalho, Versatec. A
 
 ## Instalação
 
-Clone o repositório e suba um servidor com: 
+Clone o repositório:
+
+```bash
+https://github.com/aryneto1/questoes-web-service.git
+```
+
+Suba um servidor executando esse comando no terminal estando no diretório do projeto: 
 
 ```bash
 php artisan serve
